@@ -1,6 +1,6 @@
-> Task :compileJava
+> Task :compileJava UP-TO-DATE
 > Task :processResources UP-TO-DATE
-> Task :classes
+> Task :classes UP-TO-DATE
 
 > Task :CardApiApplication.main()
 
@@ -12,18 +12,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.4)
 
-2022-09-26 22:56:27.508  INFO 6936 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 6936 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
-2022-09-26 22:56:27.521  INFO 6936 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-09-26 22:56:36.232  INFO 6936 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-09-26 22:56:36.270  INFO 6936 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-09-26 22:56:36.271  INFO 6936 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-09-26 22:56:37.520  INFO 6936 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-09-26 22:56:37.522  INFO 6936 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9335 ms
-2022-09-26 22:56:39.322  INFO 6936 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-26 22:56:39.369  INFO 6936 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 14.248 seconds (JVM running for 15.922)
-2022-09-26 22:56:52.262  INFO 6936 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-26 22:56:52.263  INFO 6936 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-09-26 22:56:52.269  INFO 6936 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2022-09-26 22:56:52.386  INFO 6936 --- [nio-8080-exec-1] c.f.cardapi.controller.CardController    : Avaliando sa?de da aplica??o
-2022-09-26 22:56:57.835  INFO 6936 --- [nio-8080-exec-3] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [1]
-2022-09-26 23:05:46.065  INFO 6936 --- [nio-8080-exec-6] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [2]
+2022-09-27 20:39:04.951  INFO 11400 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 11400 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
+2022-09-27 20:39:04.960  INFO 11400 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 20:39:07.554  INFO 11400 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-27 20:39:07.576  INFO 11400 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 20:39:07.577  INFO 11400 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-27 20:39:07.782  INFO 11400 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 20:39:07.782  INFO 11400 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2597 ms
+2022-09-27 20:39:08.622  INFO 11400 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-27 20:39:08.644  INFO 11400 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 4.648 seconds (JVM running for 5.688)
+2022-09-27 20:39:22.738  INFO 11400 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 20:39:22.739  INFO 11400 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 20:39:22.744  INFO 11400 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-09-27 20:39:22.961  INFO 11400 --- [nio-8080-exec-1] c.f.cardapi.controller.CardController    : Iniciando cria??o de Card com nome [Batman]
+2022-09-27 20:39:31.856  INFO 11400 --- [nio-8080-exec-4] c.f.cardapi.controller.CardController    : Iniciando cria??o de Card com nome [Batman]
+2022-09-27 20:39:45.241  INFO 11400 --- [nio-8080-exec-2] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [1]
+2022-09-27 20:39:48.991  INFO 11400 --- [nio-8080-exec-5] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [4]
+2022-09-27 20:39:58.705  INFO 11400 --- [nio-8080-exec-6] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [2]
+2022-09-27 20:40:02.520  INFO 11400 --- [nio-8080-exec-7] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [3]

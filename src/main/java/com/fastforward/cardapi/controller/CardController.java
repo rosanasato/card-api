@@ -1,5 +1,6 @@
 package com.fastforward.cardapi.controller;
 
+import com.fastforward.cardapi.controller.request.CreateCardRequest;
 import com.fastforward.cardapi.model.Card;
 import com.fastforward.cardapi.service.CardService;
 import org.slf4j.Logger;
@@ -41,6 +42,13 @@ public class CardController{
             return card.get();
         }
         throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Card não encontrado");
+    }
+
+    //POST localhost:8080/card
+    @PostMapping
+    public Card createCard(@RequestBody CreateCardRequest createCardRequest){
+        LOG.info("Iniciando criação de Card com nome [{}]", createCardRequest.getName());
+        return cardService.createCard(createCardRequest);
     }
 
 }

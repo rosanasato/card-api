@@ -39,4 +39,17 @@ public class CardRepositoryImpl implements CardRepository {
                 .filter(card -> card.getId() == id)
                 .findFirst();
     }
+
+    @Override
+    public Card save(Card card) {
+        var cardFound = cards.stream()
+                .filter(cardInList -> cardInList.getName().equals(card.getName()))
+                .findFirst();
+
+        card.setId(cards.size() + 1);
+        cards.add(card);
+        return card;
+    }
+
+
 }
