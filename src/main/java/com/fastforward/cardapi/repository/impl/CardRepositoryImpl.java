@@ -1,5 +1,6 @@
 package com.fastforward.cardapi.repository.impl;
 
+import com.fastforward.cardapi.exception.InvalidEntityException;
 import com.fastforward.cardapi.model.Card;
 import com.fastforward.cardapi.repository.CardRepository;
 import org.springframework.stereotype.Repository;
@@ -45,6 +46,10 @@ public class CardRepositoryImpl implements CardRepository {
         var cardFound = cards.stream()
                 .filter(cardInList -> cardInList.getName().equals(card.getName()))
                 .findFirst();
+
+        if (cardFound.isPresent()){
+            throw new InvalidEntityException("O CARD com nome [" + card.getName() + "] já existe");
+        }
 
         card.setId(cards.size() + 1);
         cards.add(card);
