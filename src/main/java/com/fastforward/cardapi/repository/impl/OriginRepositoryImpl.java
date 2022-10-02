@@ -1,5 +1,6 @@
 package com.fastforward.cardapi.repository.impl;
 
+import com.fastforward.cardapi.exception.InvalidEntityException;
 import com.fastforward.cardapi.model.Origin;
 import com.fastforward.cardapi.repository.OriginRepository;
 import org.springframework.stereotype.Repository;
@@ -34,5 +35,20 @@ public class OriginRepositoryImpl implements OriginRepository {
         return origins.stream()
                 .filter(origin -> origin.getId() == id)
                 .findFirst();
+    }
+
+    @Override
+    public Origin save(Origin origin) {
+        var originFound = origins.stream()
+                .filter(originInList -> originInList.getName().equals(origin.getName()))
+                .findFirst();
+
+        if (originFound.isPresent()){
+            throw new InvalidEntityException("A Origin com nome [" + origin.getName() + "] já existe");
+        }
+
+        origin.setId(origins.size()+1);
+        origins.add(origin);
+        return origin;
     }
 }

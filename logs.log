@@ -12,19 +12,23 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.4)
 
-2022-10-02 14:00:55.433  INFO 6348 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 6348 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
-2022-10-02 14:00:55.440  INFO 6348 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-10-02 14:00:58.319  INFO 6348 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-02 14:00:58.342  INFO 6348 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-02 14:00:58.342  INFO 6348 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-10-02 14:00:58.661  INFO 6348 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-02 14:00:58.661  INFO 6348 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3053 ms
-2022-10-02 14:00:59.934  INFO 6348 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-10-02 14:01:00.019  INFO 6348 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 5.508 seconds (JVM running for 6.208)
-2022-10-02 14:01:08.235  INFO 6348 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-02 14:01:08.237  INFO 6348 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-10-02 14:01:08.239  INFO 6348 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-10-02 14:01:08.299  INFO 6348 --- [nio-8080-exec-2] c.f.cardapi.controller.OriginController  : Iniciando busca pela origin com id [1]
+2022-10-02 14:39:16.776  INFO 17352 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 17352 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
+2022-10-02 14:39:16.782  INFO 17352 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-02 14:39:19.540  INFO 17352 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-02 14:39:19.561  INFO 17352 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-02 14:39:19.561  INFO 17352 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-02 14:39:19.773  INFO 17352 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-02 14:39:19.773  INFO 17352 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2831 ms
+2022-10-02 14:39:20.589  INFO 17352 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-02 14:39:20.609  INFO 17352 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 4.823 seconds (JVM running for 5.516)
+2022-10-02 14:40:19.000  INFO 17352 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-02 14:40:19.000  INFO 17352 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-02 14:40:19.002  INFO 17352 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-02 14:40:19.212  INFO 17352 --- [nio-8080-exec-2] c.f.cardapi.controller.OriginController  : Iniciando cria??o de origin com nome [DC Comics]
+2022-10-02 14:40:28.233  INFO 17352 --- [nio-8080-exec-3] c.f.cardapi.controller.OriginController  : Iniciando cria??o de origin com nome [DC Comics]
+2022-10-02 14:41:03.866  INFO 17352 --- [nio-8080-exec-4] c.f.cardapi.controller.OriginController  : Iniciando cria??o de origin com nome [DC Comics]
+2022-10-02 14:41:23.243  INFO 17352 --- [nio-8080-exec-5] c.f.cardapi.controller.OriginController  : Iniciando busca pela origin com id [1]
+2022-10-02 14:41:26.879  INFO 17352 --- [nio-8080-exec-6] c.f.cardapi.controller.OriginController  : Iniciando busca pela origin com id [2]
 
 > Task :CardApiApplication.main() FAILED
 
@@ -47,5 +51,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 See https://docs.gradle.org/7.5/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD FAILED in 38s
+BUILD FAILED in 2m 29s
 3 actionable tasks: 2 executed, 1 up-to-date

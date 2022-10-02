@@ -1,5 +1,6 @@
 package com.fastforward.cardapi.controller;
 
+import com.fastforward.cardapi.controller.request.CreateOriginRequest;
 import com.fastforward.cardapi.model.Origin;
 import com.fastforward.cardapi.service.OriginService;
 import org.slf4j.Logger;
@@ -30,6 +31,12 @@ public class OriginController {
         }
 
         throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Origin não encontrada");
+    }
+
+    @PostMapping
+    public Origin createOrigin(@RequestBody CreateOriginRequest createOriginRequest){
+        LOG.info("Iniciando criação de origin com nome [{}]" , createOriginRequest.getName());
+        return originService.createOrigin(createOriginRequest);
     }
 
 }
