@@ -23,14 +23,6 @@ public class CardController{
         this.cardService = cardService;
     }
 
-    //GET localhost:8080/card/health
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/health", produces = "application/json")
-    public String health(){
-        LOG.info("Avaliando saúde da aplicação");
-        return "{\"status\":\"ok\"}";
-    }
-
     //GET localhost:8080/card/{id}
     @GetMapping("{id}")
     public Card findCardById(@PathVariable("id") int id){
