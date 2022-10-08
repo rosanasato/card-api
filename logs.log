@@ -1,5 +1,5 @@
 > Task :compileJava
-> Task :processResources
+> Task :processResources UP-TO-DATE
 > Task :classes
 
 > Task :CardApiApplication.main()
@@ -12,19 +12,30 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.4)
 
-2022-10-08 09:30:35.484  INFO 5864 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 5864 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
-2022-10-08 09:30:35.495  INFO 5864 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-10-08 09:30:40.323  INFO 5864 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-10-08 09:30:40.346  INFO 5864 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-08 09:30:40.347  INFO 5864 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-10-08 09:30:41.136  INFO 5864 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-08 09:30:41.137  INFO 5864 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5365 ms
-2022-10-08 09:30:42.789  INFO 5864 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-10-08 09:30:42.821  INFO 5864 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 8.821 seconds (JVM running for 10.097)
-2022-10-08 09:34:29.854  INFO 5864 --- [nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-08 09:34:29.855  INFO 5864 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-10-08 09:34:29.857  INFO 5864 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-10-08 09:34:29.978  INFO 5864 --- [nio-8080-exec-6] c.f.cardapi.controller.CardController    : Iniciando busca pelo card com id [1]
+2022-10-08 11:59:47.749  INFO 12720 --- [           main] c.f.cardapi.CardApiApplication           : Starting CardApiApplication using Java 11.0.16.1 on Rosana-PC with PID 12720 (C:\Users\rosan\IdeaProjects\card-api\build\classes\java\main started by Rosana in C:\Users\rosan\IdeaProjects\card-api)
+2022-10-08 11:59:47.770  INFO 12720 --- [           main] c.f.cardapi.CardApiApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-08 11:59:53.036  INFO 12720 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-08 11:59:53.328  INFO 12720 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 222 ms. Found 2 JPA repository interfaces.
+2022-10-08 11:59:57.608  INFO 12720 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-08 11:59:57.669  INFO 12720 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-08 11:59:57.669  INFO 12720 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-08 11:59:58.586  INFO 12720 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-08 11:59:58.586  INFO 12720 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10460 ms
+2022-10-08 11:59:58.808  INFO 12720 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-08 12:00:01.400  INFO 12720 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-08 12:00:01.476  INFO 12720 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:./database/db_cards'
+2022-10-08 12:00:03.563  INFO 12720 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-08 12:00:04.558  INFO 12720 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-08 12:00:05.359  INFO 12720 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-08 12:00:06.133  INFO 12720 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-08 12:00:08.803  INFO 12720 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-08 12:00:08.848  INFO 12720 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-08 12:00:12.676  WARN 12720 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-08 12:00:15.835  INFO 12720 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-08 12:00:17.685  INFO 12720 --- [           main] c.f.cardapi.CardApiApplication           : Started CardApiApplication in 31.855 seconds (JVM running for 33.433)
+2022-10-08 12:00:21.221  INFO 12720 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-08 12:00:21.222  INFO 12720 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-08 12:00:21.227  INFO 12720 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 
 > Task :CardApiApplication.main() FAILED
 
@@ -47,5 +58,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 See https://docs.gradle.org/7.5/userguide/command_line_interface.html#sec:command_line_warnings
 
-BUILD FAILED in 9m 6s
-3 actionable tasks: 3 executed
+BUILD FAILED in 2m 13s
+3 actionable tasks: 2 executed, 1 up-to-date

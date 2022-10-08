@@ -1,14 +1,6 @@
-package com.fastforward.cardapi.model;
+package com.fastforward.cardapi.controller.request;
 
-import javax.persistence.*;
-import java.time.LocalDateTime;
-
-@Entity
-public class Card {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class UpdateCardRequest {
     private String name;
     private String description;
     private int strength;
@@ -16,17 +8,9 @@ public class Card {
     private int skill;
     private int gear;
     private int intellect;
+    private long originId;
     private String imageUrl;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "origin_id")
-    private Origin origin;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
-    public long getId() {
-        return id;
-    }
 
     public String getName() {
         return name;
@@ -92,45 +76,26 @@ public class Card {
         this.imageUrl = imageUrl;
     }
 
-    public Origin getOrigin() {
-        return origin;
+    public long getOriginId() {
+        return originId;
     }
 
-    public void setOrigin(Origin origin) {
-        this.origin = origin;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setOriginId(long originId) {
+        this.originId = originId;
     }
 
     @Override
     public String toString() {
-        return "Card{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "CreateCardRequest{" +
+                "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", strength=" + strength +
                 ", speed=" + speed +
                 ", skill=" + skill +
                 ", gear=" + gear +
+                ", originId=" + originId +
                 ", intellect=" + intellect +
                 ", imageUrl='" + imageUrl + '\'' +
-                ", createdAt=" + createdAt +
-                ", updatedAt=" + updatedAt +
                 '}';
     }
-
 }

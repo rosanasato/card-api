@@ -20,14 +20,8 @@ public class OriginService {
         this.originRepository = originRepository;
     }
 
-    public Optional<Origin> findOriginById(int id){
-
-        return Optional.ofNullable(originRepository.findOriginById(id)
-                .orElseThrow(() -> new EntityNotFoundException("Origin id [" + id + "] não encontrado.")));
-
-
-//        return originRepository.findOriginById(id)
-//                .orElseThrow(() -> new EntityNotFoundException("Origin id [" + id + "] não encontrado."));
+    public Optional<Origin> findOriginById(long id){
+        return originRepository.findById(id);
     }
 
     public Origin createOrigin(CreateOriginRequest createOriginRequest){
