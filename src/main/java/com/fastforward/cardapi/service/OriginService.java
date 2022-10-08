@@ -1,6 +1,7 @@
 package com.fastforward.cardapi.service;
 
 import com.fastforward.cardapi.controller.request.CreateOriginRequest;
+import com.fastforward.cardapi.exception.EntityNotFoundException;
 import com.fastforward.cardapi.model.Origin;
 import com.fastforward.cardapi.repository.OriginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,13 @@ public class OriginService {
     }
 
     public Optional<Origin> findOriginById(int id){
-        return originRepository.findOriginById(id);
+
+        return Optional.ofNullable(originRepository.findOriginById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Origin id [" + id + "] não encontrado.")));
+
+
+//        return originRepository.findOriginById(id)
+//                .orElseThrow(() -> new EntityNotFoundException("Origin id [" + id + "] não encontrado."));
     }
 
     public Origin createOrigin(CreateOriginRequest createOriginRequest){

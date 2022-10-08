@@ -5,6 +5,7 @@ import com.fastforward.cardapi.model.Origin;
 import com.fastforward.cardapi.service.OriginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -16,6 +17,7 @@ public class OriginController {
     private static final Logger LOG = LoggerFactory.getLogger(OriginController.class);
     private final OriginService originService;
 
+    @Autowired
     public OriginController(OriginService originService) {
         this.originService = originService;
     }
